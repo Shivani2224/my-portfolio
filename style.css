@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1,
+h3 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.left-cloud {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
+
+.sun {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+
+.mountain {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+}
+
+.text-contain {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  margin-top: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #0a9396;
+}
+
+#profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile {
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+#skills li {
+  text-align: center;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 10px 0;
+}
+
+#middle-container {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#bottom-container {
+  margin-top: 30px;
+  text-align: center;
+  background-color: aquamarine;
+  padding: 20px 0;
+}
+
+hr {
+  border: none;
+  border-top: 4px dotted aquamarine;
+  width: 50px;
+  margin: 50px auto;
+}
+footer {
+  text-align: center;
+}
+
+a {
+  background-color: #0a9396; /* Primary color */
+  color: #ffffff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+a:hover {
+  background-color: #005f73;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+a:active {
+  background-color: #003845;
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .left-cloud {
+    left: 20px;
+    width: 80px;
+  }
+
+  .sun {
+    right: 20px;
+    width: 60px;
+  }
+
+  .text-contain {
+    font-size: 2rem;
+  }
+
+  .profile {
+    max-width: 100%;
+  }
+
+  hr {
+    width: 30px;
+  }
+}

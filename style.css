@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
@@ -30,6 +34,20 @@ a {
 }
 
 .left-cloud {
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.left-cloud {
+  animation: float 5s infinite ease-in-out;
   position: absolute;
   top: 120px;
   left: 100px;

@@ -33,27 +33,43 @@ a {
   text-align: center;
 }
 
-.left-cloud {
-  animation: float 5s infinite ease-in-out;
-}
-
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
 .left-cloud {
-  animation: float 5s infinite ease-in-out;
+  animation: float 0.8s infinite ease-in-out;
   position: absolute;
   top: 120px;
   left: 100px;
 }
 
 .sun {
+  animation: shake 0.8s ease-in-out infinite;
   position: absolute;
   top: 30px;
   right: 150px;
@@ -89,6 +105,10 @@ a {
   list-style-type: disc;
   list-style-position: inside;
   margin: 10px 0;
+}
+#skills li:hover {
+  color: #005f73;
+  font-weight: bold;
 }
 
 #middle-container {

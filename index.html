@@ -13,16 +13,24 @@
     />
   </head>
   <body>
+    <div id="navbar-container"></div>
     <section class="top-container">
-      <img class="left-cloud" src="./picture/cloud.png" alt="" height="120" />
-      <img class="sun" src="./picture/sun.png" alt="" height="150" />
+      <img
+        class="left-cloud"
+        src="./picture/cloud.png"
+        alt="Cloud floating in sky"
+        height="120"
+      />
+      <img class="sun" src="./picture/sun.png" alt="Sun shining" height="150" />
       <div class="text-contain">
         <h1>I'm Shivani</h1>
         <h3>a Developer</h3>
+        <h3 id="dynamic-greeting"></h3>
       </div>
       <img
         class="mountain"
         src="./picture/mountain.png"
+        alt="Mountain landscape"
         height="200"
         width="300"
       />
@@ -30,7 +38,11 @@
     <section id="middle-container">
       <div id="profile">
         <h1>Hello</h1>
-        <img class="profile" src="./picture/profile.gif" height="150px" />
+        <img
+          class="profile-img"
+          src="./picture/profile.gif"
+          style="border-radius: 50%"
+        />
         <p>
           I enjoy coding and creating innovative projects, which is why I became
           a developer
@@ -38,6 +50,7 @@
       </div>
       <hr />
       <div id="skills">
+      <h2> Skills</h2>
         <ul>
           <li>
             Front-End Development: HTML, CSS, JavaScript, TypeScript, Responsive
@@ -50,6 +63,36 @@
         </ul>
       </div>
       <hr />
+      <div id="projects-container">
+   
+        <h2 >My Projects</h2>
+    <div class="project-list">
+        <div class="project">
+            <a href="https://github.com/your-profile/portfolio" target="_blank"
+              > <img
+              src="./picture/project/Portfolio.png"
+              alt="Portfolio Website"
+              class="project-image"
+              height="150px"
+              width="150px"
+            /></a>            
+            <h3>Portfolio Website</h3>
+          </div>
+          <div class="project">
+            <a href="https://github.com/your-profile/portfolio" target="_blank"
+              ><img
+                src="./picture/project/To-Do-List.png"
+                alt="To-Do-List"
+                class="project-image"
+                height="150px"
+                width="150px"
+              />
+            </a>
+            <h3>To-Do App</h3>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <section id="bottom-container">
       <div id="contactMe">

@@ -66,6 +66,7 @@ a {
   position: relative;
   padding: 100px 20px 50px;
   text-align: center;
+  margin-top: 100px;
 }
 
 @keyframes float {
@@ -125,9 +126,12 @@ a {
 }
 
 .profile-img {
-  margin: 20px auto;
-  max-width: 80%;
+  width: 150px;
   height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
 }
 
 #skills h2 {
@@ -245,12 +249,18 @@ footer {
     width: auto;
     max-width: 80px;
   }
+  .left-cloud {
+    left: 0px;
+  }
+  .sun {
+    right: 50px;
+  }
 
   .left-cloud img,
   .sun img {
     max-width: 100%;
-    height: auto; 
-    display: block; 
+    height: auto;
+    display: block;
   }
   .text-contain {
     font-size: 2rem;

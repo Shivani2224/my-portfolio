@@ -1,7 +1,5 @@
 const greeting = document.getElementById("dynamic-greeting");
-
 const hours = new Date().getHours();
-
 if (hours < 12) {
   greeting.textContent = "Good Morning! 🌞";
 } else if (hours < 18) {
@@ -9,9 +7,9 @@ if (hours < 12) {
 } else {
   greeting.textContent = "Good Evening! 🌙";
 }
-function createNavbar(containerId) {
-  const navbarContainer = document.getElementById("navbar-container");
 
+function createNavbar(containerId) {
+  const navbarContainer = document.getElementById(containerId);
   const navbar = document.createElement("nav");
   navbar.className = "navbar";
 
@@ -39,7 +37,6 @@ function createNavbar(containerId) {
 
   const toggle = document.createElement("div");
   toggle.className = "toggle";
-
   ["span", "span", "span"].forEach(() => {
     const bar = document.createElement("span");
     toggle.appendChild(bar);
@@ -52,7 +49,6 @@ function createNavbar(containerId) {
   navbar.appendChild(brand);
   navbar.appendChild(toggle);
   navbar.appendChild(menu);
-
   navbarContainer.appendChild(navbar);
 }
 createNavbar("navbar-container");

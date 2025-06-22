@@ -34,6 +34,13 @@ const projects = [
     link: "https://github.com/Shivani2224/QR_code_Generator",
     image: "./picture/project/QR-code.png",
   },
+  {
+    name: "Tic-Tac-Toe",
+    description:
+      "A Tic-Tac-Toe game that allows two players to compete, track moves, and edit player names. Built using React, JavaScript, HTML, and CSS, the app features a clean, responsive design for seamless play across devices. It provides instant feedback by detecting wins or draws, displaying the winner’s name, and supporting quick rematches.",
+    link: "https://github.com/Shivani2224/Tic-Tac-Toe-React",
+    image: "./picture/project/React-Tic-Tac-toe.png",
+  },
 ];
 
 function projectHandler() {

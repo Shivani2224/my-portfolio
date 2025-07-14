@@ -1,0 +1,121 @@
+.skills-scroll-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.skills-scroll-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.skills-scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 40px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+.skills-scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.skill-card {
+  flex: 0 0 160px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.progress-bar {
+  background: #e4e4e4;
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4e8cff, #3178c6);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3178c6;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+.scroll-arrow:hover {
+  background-color: #255a9c;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 0;
+  margin-left: -10px;
+}
+
+.right-arrow {
+  right: 0;
+  margin-right: -10px;
+}
+
+@media (max-width: 600px) {
+  .skill-card {
+    flex: 0 0 130px;
+    padding: 15px 10px;
+  }
+
+  .scroll-arrow {
+    font-size: 20px;
+    padding: 10px;
+  }
+}

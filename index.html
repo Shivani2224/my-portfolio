@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/skill.css">
+  <link rel="stylesheet" href="./src/project.css">
   </head>
   <body>
     <div id="navbar-container"></div>
@@ -54,24 +56,19 @@
         </p>
       </div>
       <hr />
-      <div id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>
-            <strong>Front-End Development </strong>: HTML, CSS, JavaScript,
-            TypeScript, Responsive Design
-          </li>
-          <li><strong>Back-End Development</strong>: Node.js, Express.js</li>
-          <li><strong>Frameworks/Libraries</strong>:React.js, Bootstrap</li>
-          <li><strong>Version Control </strong>: Git, GitHub</li>
-          <li><strong>Tools</strong>: Visual Studio Code</li>
-        </ul>
-      </div>
+ 
+<section class="skills-scroll-section">
+  <h2>My Skills</h2>
+  <div class="skills-scroll-wrapper">
+    <button class="scroll-arrow left-arrow">&#8592;</button>
+    <div class="skills-scroll-container"></div>
+    <button class="scroll-arrow right-arrow">&#8594;</button>
+  </div>
+</section>
       <hr />
       <div id="projects-container">
         <h2>My Projects</h2>
-        <div class="project-list"></div>
-      <div class="project-description"></div>
+     <div class="project-list"></div>
     
     </section>
     <section id="bottom-container">
@@ -83,6 +80,8 @@
     </section>
     <footer><p>Copyright ©2025</p></footer>
     <script src="./script.js"></script>
-    <script src="./project.js"></script>
+    <script src="./src/skill.js"></script>
+    <script src="./src/project.js"></script>
+
   </body>
 </html>

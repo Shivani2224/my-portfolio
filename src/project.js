@@ -45,31 +45,35 @@ const projects = [
 
 function projectHandler() {
   const container = document.querySelector(".project-list");
-  const descriptionContainer = document.querySelector(".project-description");
-  descriptionContainer.textContent = "Please select a project";
+  container.innerHTML = ""; // Clear previous content
+
   projects.forEach((project) => {
     const projectDiv = document.createElement("div");
-    projectDiv.className = "project";
-
-    const projectLink = document.createElement("a");
-    projectLink.href = project.link;
-    projectLink.target = "_blank";
+    projectDiv.className = "project-card";
 
     const projectImg = document.createElement("img");
     projectImg.src = project.image;
     projectImg.alt = project.name;
     projectImg.className = "project-image";
 
-    projectLink.appendChild(projectImg);
+    const title = document.createElement("h3");
+    title.className = "project-title";
+    title.textContent = project.name;
 
-    const projectTitle = document.createElement("h3");
-    projectTitle.textContent = project.name;
+    const description = document.createElement("p");
+    description.className = "project-description";
+    description.textContent = project.description;
 
-    projectDiv.appendChild(projectLink);
-    projectDiv.appendChild(projectTitle);
-    projectDiv.addEventListener("click", () => {
-      descriptionContainer.textContent = project.description;
-    });
+    const button = document.createElement("a");
+    button.href = project.link;
+    button.target = "_blank";
+    button.textContent = "View Project";
+    button.className = "project-button";
+
+    projectDiv.appendChild(projectImg);
+    projectDiv.appendChild(title);
+    projectDiv.appendChild(description);
+    projectDiv.appendChild(button);
 
     container.appendChild(projectDiv);
   });

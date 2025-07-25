@@ -45,7 +45,7 @@ const projects = [
 
 function projectHandler() {
   const container = document.querySelector(".project-list");
-  container.innerHTML = ""; // Clear previous content
+  container.innerHTML = ""; 
 
   projects.forEach((project) => {
     const projectDiv = document.createElement("div");

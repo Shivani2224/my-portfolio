@@ -1,5 +1,11 @@
-#projects-container{
+#projects-container {
   text-align: center;
+}
+
+#projects-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .project-list {
@@ -59,7 +65,6 @@
 .project-button:hover {
   background-color: #357acc;
 }
-
 
 @media (max-width: 1024px) {
   .project-list {

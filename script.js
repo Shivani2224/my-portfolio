@@ -23,7 +23,7 @@ function createNavbar(containerId) {
   const menuItems = [
     { text: "Home", href: "#" },
     { text: "About", href: "#profile" },
-    { text: "Skills", href: "#skills" },
+    { text: "Skills", href: "#skills-scroll-section" },
     { text: "Projects", href: "#projects-container" },
     { text: "Contact", href: "#contactMe" },
   ];
